@@ -54,8 +54,6 @@ function videoLinks(index) {
 VIDEO_SOURCES.forEach((_, index) => videoLinks(index));
 
 /* 3. Utilidades y estado global */
-const QUESTION_COUNT=STEPS.length;
-const TOTAL_SCENES=VIDEO_SOURCES.length;
 function videoLinks(index){const entry=VIDEO_SOURCES[index];if(!entry||entry.step!==index+1)throw new Error('Correspondencia de video inválida para el paso '+(index+1));const url=new URL(entry.url);const match=url.pathname.match(/^\/file\/d\/([A-Za-z0-9_-]+)\/view\/?$/);if(url.hostname!=='drive.google.com'||!match)throw new Error('Enlace de Drive inválido para '+entry.label);return {original:entry.url,preview:'https://drive.google.com/file/d/'+match[1]+'/preview',id:match[1]}}
 VIDEO_SOURCES.forEach((_,index)=>videoLinks(index));
 const $=id=>document.getElementById(id), video=$('video');

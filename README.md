@@ -28,7 +28,6 @@ La estructura conserva los archivos Word que aparecen en la configuración compa
 | `app.js` | Preguntas, opciones, explicaciones, enlaces de video, estado de sesión, confirmación, puntuación y navegación. |
 | `videos.json` | Copia de referencia de la correspondencia entre paso y enlace de Drive. No se carga automáticamente en la versión entregada. |
 | `README.md` | Guía del proyecto, configuración, publicación y limitaciones. |
-| Manuales `.docx` | Versiones editables anteriores; revisarlas si se modifican las funciones del aplicativo. |
 | Manuales `.pdf` | Nuevas guías de usuario en español e inglés para compartir o imprimir. |
 
 ## 2. Características
